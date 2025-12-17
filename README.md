@@ -73,7 +73,7 @@ source ~/.bashrc
 ```bash
 flutter doctor
 ```
-- 6.The command checks what tools are installed, missing or OK.
+- The command checks what tools are installed, missing or OK.
 - Key installations:  Flutter SDK, Android Studio, Linus desktop, and web.
 - For a simple flutter app, only Flutter SDK and Web installations are required..
 
@@ -89,20 +89,49 @@ cd Development_1/code/phase-5/flutter_beginne_-toolkit
  ```
  - The "." at the end tells Flutter to create the project in the current folder. Note that the project folder contains everything needed to run the app, like the Linux setup, Web setup and libraries, config files. Codes are however written in the lib/main.dart file.
 
- 10. To confirm that the project folder is successfully created, run:
+10. To confirm that the project folder is successfully created, run:
  ```bash
  flutter run -d chrome
  ```
  - It opens the default Flutter counter app in the browser with a number increasing when the  plus button is pressed. 
 
- 11. Open the VSCode. Navigate into lib folder and open the main.dart file
+11. Open the VSCode. Navigate into lib folder and open the main.dart file
 
- 12. 11.Delete the default countet app code
+12. 11.Delete the default countet app code
 
- 13. Replace with the code that runs your application
+13. Replace with the code that runs your application
 
- 14. Save the file and run:
+14. Save the file and run:
  ```bash
   flutter run -d chrome
   ```
   - The browser should display the **Hello Flutter!** text  with a button **Press Me** which when pressed, the text changes to **Flutter is interactive!** in bigger font and blue color. 
+
+## Minimal Working Example
+
+### Description
+
+  A simple Flutter app that shows text “Hello Flutter!” and a button. Pressing the button changes the text, its color, and size to demonstrate basic interactivity and UI customization.
+  
+### Code
+
+  // Widget that displays the text in the center of the screen
+  Text(
+  text, // Current text: "Hello Flutter!" initially, changes when button is pressed
+  style: TextStyle(
+    fontSize: changed ? 32 : 24, // Font size 24 initially, 32 when changed
+    color: changed ? Colors.blue : Colors.black, // Black initially, blue when changed
+    ),
+  ),
+  
+### Expected output
+
+**Initial:** “Hello Flutter!” in black, font size 24, button below.
+**After pressing button:** Text changes to “Flutter is interactive!”, color becomes blue, font size 32. Pressing again toggles back.
+
+## AI Prompt Journal
+### Prompt 1
+
+**Prompt used:**
+
+
