@@ -114,7 +114,7 @@ cd Development_1/code/phase-5/flutter_beginne_-toolkit
   A simple Flutter app that shows text “Hello Flutter!” and a button. Pressing the button changes the text, its color, and size to demonstrate basic interactivity and UI customization.
   
 ### Code
-
+```bash
   // Widget that displays the text in the center of the screen
   Text(
   text, // Current text: "Hello Flutter!" initially, changes when button is pressed
@@ -123,7 +123,8 @@ cd Development_1/code/phase-5/flutter_beginne_-toolkit
     color: changed ? Colors.blue : Colors.black, // Black initially, blue when changed
     ),
   ),
-  
+```
+
 ### Expected output
 
 **Initial:** “Hello Flutter!” in black, font size 24, button below.
